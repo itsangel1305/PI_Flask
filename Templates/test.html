@@ -61,7 +61,7 @@
         const contadorTelefono = document.getElementById('contador-telefono');
         const formulario = document.getElementById('formulario');
 
-        // Validación para el campo de Nombre Completo
+        
         nombreInput.addEventListener('input', function () {
             const nombreValue = nombreInput.value;
             const regexNombre = /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/; // Solo letras y espacios
@@ -76,7 +76,7 @@
             }
         });
 
-        // Validación para el campo de Correo Electrónico
+        
         emailInput.addEventListener('input', function () {
             const emailValue = emailInput.value;
             const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Formato de correo
@@ -91,7 +91,7 @@
             }
         });
 
-        // Validación para el campo de Teléfono Celular
+        
         telefonoInput.addEventListener('input', function () {
             const telefonoValue = telefonoInput.value;
             const regexTelefono = /^[0-9]*$/; // Solo números
@@ -105,11 +105,10 @@
                 errorTelefono.style.display = 'none';
             }
 
-            // Actualizar contador de caracteres
             contadorTelefono.textContent = `${telefonoValue.length}/10`;
         });
 
-        // Prevenir el envío del formulario si hay errores
+        
         formulario.addEventListener('submit', function (event) {
             if (nombreInput.classList.contains('invalid') || 
                 emailInput.classList.contains('invalid') || 
