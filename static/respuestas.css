@@ -1,11 +1,11 @@
 body {
-    background-color: #e0f7fa;
+    background-color: #f7f7f7; /* Blanco muy claro */
 }
 .results-container {
     max-width: 600px;
     margin: auto;
     padding: 2rem;
-    background-color: #b2ebf2;
+    background-color: #e0dfde; /* Gris claro */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
